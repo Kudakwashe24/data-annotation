@@ -71,6 +71,6 @@ VIA is an open source project released under the
 Aug. 31, 2016
 
 ## Contributors
-[Kudakwashe Mukombachoto](kudakwashe@aerobotics.co)
-[Eurico Jeremias Catumbela](erick@aerobotics.co)
+[Kudakwashe Mukombachoto](mailto:kudakwashe@aerobotics.co)
+[Eurico Jeremias Catumbela](mailto:erick@aerobotics.co)
 April. 2019
