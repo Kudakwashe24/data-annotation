@@ -61,3 +61,8 @@ VIA is an open source project released under the
 ## Author
 [Abhishek Dutta](mailto:adutta@robots.ox.ac.uk)  
 Aug. 31, 2016
+
+## Contributors
+[Kudakwashe Mukombachoto](kudakwashe@aerobotics.co)
+[Eurico Jeremias Catumbela](erick@aerobotics.co)
+April. 2019
