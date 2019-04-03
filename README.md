@@ -18,18 +18,18 @@ Visit the [VGG software page](http://www.robots.ox.ac.uk/~vgg/software/via/) for
 ### 02 April 2019
  * Planning and drawing up a wireframe
  * Step 1: User must first register
- * Step 2: User clicks on the 'start' button
+ * Step 2: User clicks on the 'Enter' button
  * Step 3: User enters a login name and password
- * Step 4: Varification of correct username and password, if incorrect return to login page and if correct proceed.
+ * Step 4: Verification of correct username and password, if incorrect return to login page and if correct proceed.
  * Step 5: Once login is successful the data annotation page will appear
  * On the data annotation page there will be options: Get new, save and Vai image manipulation
  * That will be the end of the registration and login section
 
 ### 03 April 2019
  * Once the user has the data annotaion page open they can now start working
- * Step 1: Get new image from S3 Amazon and will be save in Heroku server once completed
- * Step 2: Check if image has been selected: if yes then proceed and if not user will be redirected to the S3 Amazon page and will reselect image
- * Step 3: Once user has completed working on the image they will save and the Json file will be redirected to Heroku server.
+ * Step 6: Get new image from S3 Amazon and will be save in Heroku server once completed
+ * Step 7: Check if image has been selected: if yes then proceed and if not user will be redirected to the S3 Amazon page and will reselect image
+ * Step 8: Once user has completed working on the image they will save and the Json file will be redirected to Heroku server.
 
  ### Work Done
   * Created a separate css and javascript folder
