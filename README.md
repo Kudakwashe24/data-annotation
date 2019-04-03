@@ -22,6 +22,7 @@ Visit the [VGG software page](http://www.robots.ox.ac.uk/~vgg/software/via/) for
  * Step 3: User enters a login name and password
  * Step 4: Varification of correct username and password, if incorrect return to login page and if correct proceed.
  * Step 5: Once login is successful the data annotation page will appear
+ * On the data annotation page there will be options: Get new, save and Vai image manipulation
  * That will be the end of the registration and login section
 
 ### 03 April 2019
@@ -31,7 +32,8 @@ Visit the [VGG software page](http://www.robots.ox.ac.uk/~vgg/software/via/) for
  * Step 3: Once user has completed working on the image they will save and the Json file will be redirected to Heroku server.
 
  ### Work Done
-  * 
+  * Created a separate css and javascript folder
+
 
 ## Downloads
 See http://www.robots.ox.ac.uk/~vgg/software/via/
