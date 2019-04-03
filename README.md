@@ -61,6 +61,7 @@ code and its documentation.
 Software bug reports and feature requests should be 
 [submitted here](https://gitlab.com/vgg/via/issues/new) (requires gitlab account).
 For all other queries, please contact [Abhishek Dutta](mailto:adutta@robots.ox.ac.uk).
+For more queries on the updated version, please contact [Kudakwashe Mukombachoto](mailto:kudakwashe@aerobotics.co) [Eurico Jeremias Catumbela](mailto:erick@aerobotics.co)
 
 ## License
 VIA is an open source project released under the 
