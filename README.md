@@ -15,6 +15,15 @@ Visit the [VGG software page](http://www.robots.ox.ac.uk/~vgg/software/via/) for
   * supported region shapes: rectangle, circle, ellipse, polygon and point
   * import/export of region data in csv and json file format
 
+### 02 April 2019
+ * Planning and drawing up a wireframe
+ * Step 1: User must first register
+ * Step 2: User clicks on the 'start' button
+ * Step 3: User enters a login name and password
+ * Step 4: Varification of correct username and password, if incorrect return to login page and if correct proceed.
+ * Step 5: Once login is successful the data annotation page will appear
+ * That will be the end of the registration and login section
+
 
 ## Downloads
 See http://www.robots.ox.ac.uk/~vgg/software/via/
