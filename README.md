@@ -30,6 +30,9 @@ Visit the [VGG software page](http://www.robots.ox.ac.uk/~vgg/software/via/) for
  * Step 2: Check if image has been selected: if yes then proceed and if not user will be redirected to the S3 Amazon page and will reselect image
  * Step 3: Once user has completed working on the image they will save and the Json file will be redirected to Heroku server.
 
+ ### Work Done
+  * 
+
 ## Downloads
 See http://www.robots.ox.ac.uk/~vgg/software/via/
 
@@ -63,9 +66,9 @@ For all other queries, please contact [Abhishek Dutta](mailto:adutta@robots.ox.a
 VIA is an open source project released under the 
 [BSD-2 clause license](https://gitlab.com/vgg/via/blob/master/LICENSE).
 
-<!-- ## Author
+## Author
 [Abhishek Dutta](mailto:adutta@robots.ox.ac.uk)  
-Aug. 31, 2016 -->
+Aug. 31, 2016
 
 ## Contributors
 [Kudakwashe Mukombachoto](kudakwashe@aerobotics.co)
