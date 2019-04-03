@@ -150,3 +150,36 @@ textarea {
     display: inline-block; 
     margin-right:1rem;  
 }
+
+/* Slider: containing range slider */
+.slidecontainer {
+    height: 20px;
+    width: 200px;
+    justify-content: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 200px;
+    height: 10px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 10px; /* Slider handle height */
+    background: #0000FF; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
