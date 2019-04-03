@@ -23,3 +23,15 @@ textarea {
     margin:0.6rem 0; 
     padding:0.2rem 0.4rem; 
 }
+
+/* Top panel : #navbar, #toolbar */
+.top_panel { 
+    font-size:0.9rem; 
+    display:block; 
+    position: fixed; 
+    width: 100%; 
+    background-color:#212121; 
+    color:#ffffff; 
+    z-index:1001; 
+    margin-bottom:1rem;
+}
