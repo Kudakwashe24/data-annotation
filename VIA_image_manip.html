@@ -33,7 +33,7 @@
     <title>VGG Image Annotator</title>
     <meta name="author" content="Abhishek Dutta">
     <meta name="description" content="VIA is a standalone image annotator application packaged as a single HTML file (< 400 KB) that runs on most modern web browsers.">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 
     <!--
     Development of VIA is supported by the EPSRC programme grant
@@ -55,13 +55,6 @@
       ga('set', 'page', '/via-2.0.0.html');
       ga('send', 'pageview');
     </script>
-
-    <!-- CSS style definition -->
-    <!-- <style type="text/css">
-
-
-    
-    </style> -->
   </head>
 
   <body onload="_via_init()" onresize="_via_update_ui_components()">
@@ -215,21 +208,23 @@
       <!-- menu bar -->
       <div class="menubar">
         <ul>
-          <li onclick="show_home_panel()" style="cursor:pointer;">Home</li>
+          <!-- <li onclick="show_home_panel()" style="cursor:pointer;">Home</li> -->
           <li>Project
             <ul>
+                <li onclick="sel_local_images()" title="Add images locally stored in this computer">Get new image</li>
               <li onclick="project_open_select_project_file()" title="Load a VIA project (from a JSON file)">Load</li>
               <li onclick="project_save_with_confirm()" title="Save this VIA project (as a JSON file)">Save</li>
+              <li onclick="project_save_attributes()" title="Export region and file attributes to a JSON file">Submit</li>
               <li onclick="settings_panel_toggle()" title="Show/edit project settings">Settings</li>
-              <li class="submenu_divider"></li>
-              <li onclick="sel_local_images()" title="Add images locally stored in this computer">Add local files</li>
-              <li onclick="project_file_add_url_with_input()" title="Add images from a web URL (e.g. http://www.robots.ox.ac.uk/~vgg/software/via/images/swan.jpg)">Add files from URL</li>
-              <li onclick="project_file_add_abs_path_with_input()" title="Add images using absolute path of file (e.g. /home/abhishek/image1.jpg)">Add file using absolute path</li>
-              <li onclick="sel_local_data_file('files_url')" title="Add images from a list of web url or absolute path stored in a text file (one url or path per line)">Add url or path from text file</li>
-              <li onclick="project_file_remove_with_confirm()" title="Remove selected file (i.e. file currently being shown)">Remove file</li>
-              <li class="submenu_divider"></li>
-              <li onclick="sel_local_data_file('attributes')" title="Import region and file attributes from a JSON file">Import region/file attributes</li>
-              <li onclick="project_save_attributes()" title="Export region and file attributes to a JSON file">Export region/file attributes</li>
+              <!-- <li class="submenu_divider"></li> -->
+              <!-- <li onclick="sel_local_images()" title="Add images locally stored in this computer">Add local files</li> -->
+              <!-- <li onclick="project_file_add_url_with_input()" title="Add images from a web URL (e.g. http://www.robots.ox.ac.uk/~vgg/software/via/images/swan.jpg)">Add files from URL</li> -->
+              <!-- <li onclick="project_file_add_abs_path_with_input()" title="Add images using absolute path of file (e.g. /home/abhishek/image1.jpg)">Add file using absolute path</li> -->
+              <!-- <li onclick="sel_local_data_file('files_url')" title="Add images from a list of web url or absolute path stored in a text file (one url or path per line)">Add url or path from text file</li> -->
+              <!-- <li onclick="project_file_remove_with_confirm()" title="Remove selected file (i.e. file currently being shown)">Remove file</li> -->
+              <!-- <li class="submenu_divider"></li> -->
+              <!-- <li onclick="sel_local_data_file('attributes')" title="Import region and file attributes from a JSON file">Import region/file attributes</li> -->
+              <!-- <li onclick="project_save_attributes()" title="Export region and file attributes to a JSON file">Export region/file attributes</li> -->
             </ul>
           </li>
 
@@ -249,7 +244,7 @@
             <ul>
               <li onclick="image_grid_toggle()" title="Toggle between single image view and image grid view">Toggle image grid view</li>
               <li onclick="leftsidebar_toggle()" title="Show or hide the sidebar shown in left hand side">Toggle left sidebar</li>
-<li onclick="toggle_img_fn_list_visibility()" title="Show or hide a panel to update annotations corresponding to file and region">Toggle image filename list</li>
+              <li onclick="toggle_img_fn_list_visibility()" title="Show or hide a panel to update annotations corresponding to file and region">Toggle image filename list</li>
               <li class="submenu_divider"></li>
               <li onclick="toggle_attributes_editor()" title="Show or hide a panel to update file and region attributes">Toggle attributes editor</li>
               <li onclick="toggle_annotation_editor()" title="Show or hide a panel to update annotations corresponding to file and region">Toggle annotation editor</li>
@@ -269,6 +264,8 @@
               <li onclick="set_display_area_content(VIA_DISPLAY_AREA_CONTENT_NAME.PAGE_ABOUT)" title="Show more details about this application">About VIA</li>
             </ul>
           </li>
+
+          
         </ul>
       </div> <!-- end of menubar -->
 
@@ -315,7 +312,7 @@
       </div>
       <!-- end of shortcut toolbar -->
       <input type="file" id="invisible_file_input" name="files[]" style="display:none">
-    </div> <!-- endof #top_panel -->
+    </div> <!-- end of #top_panel -->
 
     <!-- Middle Panel contains a left-sidebar and image display areas -->
     <div class="middle_panel">
